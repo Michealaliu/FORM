@@ -1,59 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Signup and Login</title>
-</head>
-<body>
-  <h1>PRIME CODES</h1>
-
-  <!-- Signup form -->
-  <div id="signup">
-    <h2>Sign Up</h2>
-    <form onsubmit="event.preventDefault(); showLogin();">
-      <label>Email:</label><br>
-      <input type="email" required><br><br>
-
-      <label>Username:</label><br>
-      <input type="text" required><br><br>
-
-      <label>Password:</label><br>
-      <input type="password" required><br><br>
-
-      <label>Confirm Password:</label><br>
-      <input type="password" required><br><br>
-
-      <input type="submit" value="Register">
-    </form>
-    <br>
-    <button onclick="showLogin()">Already have an account? Login</button>
-  </div>
-
-  <!-- Login form (hidden at first) -->
-  <div id="login" style="display:none;">
-    <h2>Login</h2>
-    <form>
-      <label>Username:</label><br>
-      <input type="text" required><br><br>
-
-      <label>Password:</label><br>
-      <input type="password" required><br><br>
-
-      <input type="submit" value="Login">
-    </form>
-    <br>
-    <button onclick="showSignup()">Don’t have an account? Sign Up</button>
-  </div>
-
-  <script>
-    function showLogin() {
-      document.getElementById("signup").style.display = "none";
-      document.getElementById("login").style.display = "block";
-    }
-
-    function showSignup() {
-      document.getElementById("login").style.display = "none";
-      document.getElementById("signup").style.display = "block";
-    }
-  </script>
-</body>
-</html>
+ <!DOCTYPE html>
+ <html>
+  <meta charset="utf-8">
+  <head>
+   <title>Registration Form</title>
+  </head>
+  <body>
+   <strong>
+   <h1>Sign up</h1><br><br>
+   <form action="login.html" method="get">
+    <fieldset>
+     <legend>User Information</legend><br>
+       <label>Enter email</label><br>
+       <input type="email" name="email" required><br><br>
+       
+      <label>Enter Password</label><br>
+       <input type="password" name="pass" required><br><br>
+      
+    <label>Confirm Password</label><br>
+      <input type="password" name="pass" required><br><br>
+      
+      
+      <input type="checkbox" name="agree to sign up" required>Agree to sign up<br><br>
+      
+      <input type="button" value="Sign up" onclick="alert('Successful✅')"><br><br>
+      
+      <p>Already have an account before?<a href="login.html"><input type="submit" value="Login"></a></p>
+      
+      
+    </fieldset>
+   </strong>
+   </form>
+   
+  </body>
+ </html>
