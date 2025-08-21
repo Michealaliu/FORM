@@ -1,40 +1,34 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
+<head>
   <meta charset="utf-8">
-  <head>
-   <title>Registration Form</title>
-  </head>
-  <body>
-   <strong>
-   <h1>Sign up</h1><br><br>
-   <form action="login.html" method="get">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Sign up</h1>
+  
+  <form action="login.html" method="get">
     <fieldset>
-     <legend>User Information</legend><br>
-
-     
-     <label>Username</label><br>
-     <input type="text" name="username" required><br><br>
-
-       <label>Enter email</label><br>
-       <input type="email" name="email" required><br><br>
-       
-      <label>Enter Password</label><br>
-       <input type="password" name="pass" required><br><br>
+      <legend><strong>User Information</strong></legend><br>
       
-    <label>Confirm Password</label><br>
-      <input type="password" name="pass" required><br><br>
+      <label><strong>Username</strong></label><br>
+      <input type="text" name="username" required><br><br>
       
+      <label><strong>Email</strong></label><br>
+      <input type="email" name="email" required><br><br>
       
-      <input type="checkbox" name="agree to sign up" required>Agree to sign up<br><br>
+      <label><strong>Password</strong></label><br>
+      <input type="password" name="password" required><br><br>
       
-      <input type="button" value="Sign up" onclick="alert('Successful✅')"><br><br>
+      <label><strong>Confirm Password</strong></label><br>
+      <input type="password" name="confirm_password" required><br><br>
       
-      <p>Already have an account before?<a href="login.html"><input type="submit" value="Login"></a></p>
+      <input type="checkbox" name="agree" required> <strong>Agree</strong><br><br>
       
+      <input type="submit" value="Signup"><br><br>
       
+      <p><strong>Already have an account? <a href="login.html">Login</a></strong></p>
     </fieldset>
-   </strong>
-   </form>
-   
-  </body>
- </html>
+  </form>
+</body>
+</html>
