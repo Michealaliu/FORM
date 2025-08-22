@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <title>Registration Form</title>
 </head>
 <body>
-  <h1>Sign up</h1>
+  <h1 class="headings">Sign up</h1>
   
   <form action="login.html" method="get">
     <fieldset>
-      <legend><strong>User Information</strong></legend><br>
+      <legend class="legend">
+        <strong>User Information</strong></legend><br>
       
-      <label><strong>Username</strong></label><br>
-      <input type="text" name="username" required><br><br>
+      <label class="label"><strong>Username</strong></label><br>
+    
+   
+      <input class="input" type="text" name="username" required><br><br>
+    </select>
       
-      <label><strong>Email</strong></label><br>
-      <input type="email" name="email" required><br><br>
+      <label class="label"><strong>Email</strong></label><br>
+      <input class="input" type="email" name="email" required><br><br>
       
-      <label><strong>Password</strong></label><br>
-      <input type="password" name="password" required><br><br>
+      <label class="label"><strong>Password</strong></label><br>
+      <input class="input" type="password" name="password" required><br><br>
       
-      <label><strong>Confirm Password</strong></label><br>
-      <input type="password" name="confirm_password" required><br><br>
+      <label class="label"><strong>Confirm Password</strong></label><br>
+      <input class="input" type="password" name="confirm_password" required><br><br>
       
-      <input type="checkbox" name="agree" required> <strong>Agree</strong><br><br>
+      <input class="button "type="checkbox" name="agree" required> <strong>Agree</strong><br><br>
       
-      <input type="submit" value="Signup"><br><br>
+      <button class="button">Signup</button><br><br>
       
-      <p><strong>Already have an account? <a href="login.html">Login</a></strong></p>
+      <p><b>
+   Already have an account?<button class="login">Login</button>
+        </b>
+        </p>
     </fieldset>
   </form>
+  
+  
+ 
+  
 </body>
 </html>
